@@ -1,0 +1,101 @@
+Hostname   hostname_0
+Status	   ready.....
+IPmode     static
+IP         10.167.111.67
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserer1  127.0.0.1
+DNSserver2 127.0.0.2
+DNSserver3 127.0.0.3
+IPv6mode   static
+IPv6address 2001:cdba:0000:0000:0000:0000:3257:9651
+IPv6netmask 64
+IPv6gateway 2001:cdba:290c:1291::1
+
+Hostname   hostname_1
+Status	   ready.....
+IPmode     static
+IP         10.167.111.67
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserver1  127.0.0.1
+DNSserver2 
+DNSserver3  127.0.0.3
+IPv6mode    static
+IPv6address 2001:cdba:0:0:0:0:3257:9652
+IPv6netmask 128
+IPv6gateway 2001:cdba:290c:1291::1
+
+Hostname   hostname_2
+Status	   ready.....
+IPmode     static
+IP         10.167.111.67
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserver1 127.0.0.1
+DNSserver2 
+DNSserver3 127.0.0.2
+
+Hostname   hostname_3
+Status	   ready.....
+IPmode     dynamic
+
+Hostname   hostname_4
+Status	   ready.....
+IPmode     dynamic
+IPv6mode    static
+IPv6address 2001:cdba:0:0:0:0:3257:9653
+IPv6netmask 128
+IPv6gateway 2001:cdba:290c:1291::1
+
+Hostname   hostname_5
+Status	   ready.....
+IPmode     dynamic
+IPv6mode   discovery
+
+Hostname   hostname_6
+Status	   ready.....
+IPmode     static
+IP         10.167.111.68
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserver1
+DNSserver2 
+DNSserver3
+
+Hostname   hostname_7
+Status	   ready.....
+IPmode     dynamic
+
+Hostname   hostname_8
+Status	   ready.....
+IPmode     static
+IP         10.167.111.67
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserver1
+DNSserver2
+DNSserver3
+IPv6mode    static
+IPv6address 2001:cdba::3257:9654
+IPv6netmask
+IPv6gateway 2001:cdba:290c:1291::1
+
+Hostname   hostname_9
+Status	   ready.....
+IPmode     static
+IP         10.167.111.67
+Netmask    255.255.255.0
+DefGateway 10.167.111.1 
+DNSserver1  
+DNSserver2
+DNSserver3
+IPv6mode    discovery
+
+Hostname   hostname_10
+Status	   ready.....
+IPmode     dynamic
+
+Hostname   hostname_11
+Status	   ready.....
+IPmode     dynamic
