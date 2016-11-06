@@ -36,7 +36,8 @@ MAC address read from the webmin server and lists the MAC addres, and parameters
 used to program the device. On error, a 'random' Error output file is written.
 
 The 6 Record types are written from a template as follows.
-  Field      type                    example.
+Field      type                    example.
+
 Hostname   text[ A-Z,a-z,0-9 -_ ]  hostname_1.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
 IPmode     value                   static>.
@@ -47,10 +48,12 @@ DNSserver1 ipv4                    .
 DNSserver2 ipv4                    .
 DNSserver3 ipv4                    .
 space.
+
 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_2.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
 IPmode     value                   dynamic.
 space.
+
 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_3.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
 IPmode     value                   static.
@@ -65,6 +68,7 @@ IPv6address ipv6                  2001:cdba:0000:0000:0000:0000:3257:9652.
 IPv6netmask numeric               64.
 IPv6gateway ipv6                  2001:cdba:290c:1291::1.
 space.
+
 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_4.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
 IPmode     value                   static.
@@ -75,6 +79,7 @@ DNSserver1 ipv4                    .
 DNSserver2 ipv4                    .
 DNSserver3 ipv4                    .
 IPv6 mode  value                   discovery.
+
 space.                  
 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_5.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
@@ -83,6 +88,7 @@ IPv6 mode  value                   static.
 IPv6address ipv6                   2001:cdba:0:0:0:0:3257:9652.
 IPv6netmask numeric                64.
 IPv6gateway ipv6                   2001:cdba:290c:1291::1.
+
 space.
 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_6.
 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
