@@ -23,7 +23,7 @@ The Config file can contain any number of records of 6 types:
 4) IPv4 static + IPv6 discovery len 10.
 5) IPv4 dynamic + IPv6 static len 7.
 6) IPv4 dynamic + IPv6 discovery len 4.
-The end of each record is delimited by a <space>.
+The end of each record is delimited by a space.
 
 Multiple instances of the program can be run, each reading the Config File
 and next 'ready' record and programming the next device with this record. 
@@ -38,56 +38,56 @@ used to program the device. On error, a 'random' Error output file is written.
 The 6 Record types are written from a template as follows:
 
   Field      type                    example.
-0 Hostname   text[ A-Z,a-z,0-9 -_ ]  <hostname_1>.
-1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-2 IPmode     value                   <static>.
-3 IP         ipv4                    <10.167.111.67>.
-4 Netmask    ipv4                    <255.255.255.0>.
-5 DefGateway ipv4                    <127.0.0.1>.
-6 DNSserver1 ipv4                    <>.
-7 DNSserver2 ipv4                    <>.
-8 DNSserver3 ipv4                    <>.
-<space>.
-0 Hostname   text[ A-Z,a-z,0-9-_ ]   <hostname_2>.
-1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-2 IPmode     value                   <dynamic>.
-<space>.
-0 Hostname   text[ A-Z,a-z,0-9-_ ]   <hostname_3>.
-1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-2 IPmode     value                   <static>.
-3 IP         ipv4                    <10.167.111.67>.
-4 Netmask    ipv4                    <255.255.255.0>.
-5 DefGateway ipv4                    <127.0.0.1>.
-6 DNSserver1 ipv4                    <>. 
-7 DNSserver2 ipv4                    <>.
-8 DNSserver3 ipv4                    <>.
-9 IPv6 mode  value                   <static>.
+0 Hostname   text[ A-Z,a-z,0-9 -_ ]  hostname_1.
+1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+2 IPmode     value                   static>.
+3 IP         ipv4                    10.167.111.67>.
+4 Netmask    ipv4                    255.255.255.0>.
+5 DefGateway ipv4                    127.0.0.1>.
+6 DNSserver1 ipv4                    .
+7 DNSserver2 ipv4                    .
+8 DNSserver3 ipv4                    .
+space.
+0 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_2.
+1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+2 IPmode     value                   dynamic.
+space.
+0 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_3.
+1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+2 IPmode     value                   static.
+3 IP         ipv4                    10.167.111.67.
+4 Netmask    ipv4                    255.255.255.0.
+5 DefGateway ipv4                    127.0.0.1.
+6 DNSserver1 ipv4                    . 
+7 DNSserver2 ipv4                    .
+8 DNSserver3 ipv4                    .
+9 IPv6 mode  value                   static.
 10 IPv6address ipv6                  2001:cdba:0000:0000:0000:0000:3257:9652.
 11 IPv6netmask numeric               64.
 12 IPv6gateway ipv6                  2001:cdba:290c:1291::1.
-<space>.
-# 0 Hostname   text[ A-Z,a-z,0-9-_ ]   <hostname_4>.
-# 1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-# 2 IPmode     value                   <static>.
-# 3 IP         ipv4                    <10.167.111.67>.
-# 4 Netmask    ipv4                    <255.255.255.0>.
-# 5 DefGateway ipv4                    <127.0.0.1>.
-# 6 DNSserver1 ipv4                    <>.
-# 7 DNSserver2 ipv4                    <>.
-# 8 DNSserver3 ipv4                    <>.
-# 9 IPv6 mode  value                   <discovery>.
-<space>.                  
-# 0 Hostname   text[ A-Z,a-z,0-9-_ ]   <hostname_5>.
-# 1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-# 2 IPmode     value                   <dynamic>.
-# 3 IPv6 mode  value                   <static>.
+space.
+# 0 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_4.
+# 1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+# 2 IPmode     value                   static.
+# 3 IP         ipv4                    10.167.111.67.
+# 4 Netmask    ipv4                    255.255.255.0.
+# 5 DefGateway ipv4                    127.0.0.1.
+# 6 DNSserver1 ipv4                    .
+# 7 DNSserver2 ipv4                    .
+# 8 DNSserver3 ipv4                    .
+# 9 IPv6 mode  value                   discovery.
+space.                  
+# 0 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_5.
+# 1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+# 2 IPmode     value                   dynamic.
+# 3 IPv6 mode  value                   static.
 # 4 IPv6address ipv6                   2001:cdba:0:0:0:0:3257:9652.
 # 5 IPv6netmask numeric                64.
 # 6 IPv6gateway ipv6                   2001:cdba:290c:1291::1.
-<space>.
-0 Hostname   text[ A-Z,a-z,0-9-_ ]   <hostname_6>.
-1 Status     text[ A-Z,a-z,0-9 _.]   <ready.....> <locked....> <configured>.
-2 IPmode     value                   <dynamic>.
-3 IPv6 mode  value                   <discovery>.
-<end>.
+space.
+0 Hostname   text[ A-Z,a-z,0-9-_ ]   hostname_6.
+1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
+2 IPmode     value                   dynamic.
+3 IPv6 mode  value                   discovery.
+
 
