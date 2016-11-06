@@ -35,9 +35,9 @@ An Output file is written for each programmed device, its name is based on the
 MAC address read from the webmin server and lists the MAC addres, and parameters
 used to program the device. On error, a 'random' Error output file is written.
 
-The 6 Record types are written from a template as follows:
-
+The 6 Record types are written from a template as follows.
   Field      type                    example.
+
 0 Hostname   text[ A-Z,a-z,0-9 -_ ]  hostname_1.
 1 Status     text[ A-Z,a-z,0-9 _.]   ready..... locked.... configured.
 2 IPmode     value                   static>.
